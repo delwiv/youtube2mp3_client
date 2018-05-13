@@ -1,8 +1,8 @@
 import {
+  REQUEST_USER_REPOS_FAILED,
   REQUEST_USER_REPOS_START,
-  REQUEST_USER_REPOS_SUCCESS,
-  REQUEST_USER_REPOS_FAILED
-} from '../actions/actionTypes';
+  REQUEST_USER_REPOS_SUCCESS
+} from '../../actions/home/actionTypes';
 
 let initialState = {
   repos: [],
@@ -10,7 +10,6 @@ let initialState = {
   errors: []
 };
 function applyUserRepos(state = initialState, action) {
-
   switch (action.type) {
     case REQUEST_USER_REPOS_START:
       return Object.assign({}, state, {
