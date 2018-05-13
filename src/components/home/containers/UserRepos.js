@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Repo from '../components/Repo';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { doUserRepos } from '../../actions/home/doUserRepos';
+import { doUserRepos } from '../../../actions/home/doUserRepos';
 
 class UserRepos extends Component {
   componentDidMount() {

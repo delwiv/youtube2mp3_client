@@ -1,31 +1,27 @@
-import React, { Component } from 'react';
 import 'rxjs';
-import { Provider } from 'react-redux'
-import { ConnectedRouter } from 'react-router-redux';
-import store, { history } from './store';
-
 // Styles
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-// routes
-import routes from './routes';
+import React, { Component } from 'react';
+import store, { history } from './store';
 
+import { ConnectedRouter } from 'react-router-redux';
+import Footer from './components/Footer';
 // common components
-import Header from './common/components/Header'
-import Footer from './common/components/Footer'
+import Header from './components/Header';
+import { Provider } from 'react-redux';
+// routes
+import routes from './asyncRoutes';
 
 class App extends Component {
-
   render() {
     return (
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <div className="App">
             <Header />
-            <div className="wrap">
-              {routes}
-            </div>
+            <div className="wrap">{routes}</div>
             <Footer />
           </div>
         </ConnectedRouter>
