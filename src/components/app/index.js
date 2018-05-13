@@ -4,15 +4,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 import React, { Component } from 'react';
-import store, { history } from './store';
+import store, { history } from '../../store';
 
 import { ConnectedRouter } from 'react-router-redux';
-import Footer from './components/Footer';
+import Footer from './Footer';
 // common components
-import Header from './components/Header';
+import Header from './Header';
 import { Provider } from 'react-redux';
 // routes
-import routes from './asyncRoutes';
+import routes from '../../asyncRoutes';
 
 class App extends Component {
   render() {
