@@ -1,6 +1,6 @@
 {
-  "name": "cra-boilerplate",
-  "version": "1.0.2",
+  "name": "delwiv-seed",
+  "version": "1.0.0",
   "dependencies": {
     "babel-eslint": "^8.0.1",
     "bootstrap": "^4.0.0",
@@ -55,9 +55,9 @@
     "boilerplate"
   ],
   "author": {
-    "name": "Mohan Dere",
-    "url": "https://github.com/mohandere"
+    "name": "Delwiv",
+    "url": "https://github.com/delwiv"
   },
   "homepage": ".",
-  "license": "MIT"
+  "license": "WTFPL"
 }
